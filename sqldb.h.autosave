@@ -1,0 +1,27 @@
+#ifndef SQLDB_H
+#define SQLDB_H
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
+#include <qDebug>
+
+struct CareInfo
+{
+    
+};
+
+class Sqldb
+{
+public:
+    Sqldb();
+    ~Sqldb();
+
+    void InitConnet();
+    void InsertData();
+
+private:
+    void InitDbDate();
+    QSqlDatabase db;
+};
+
+#endif // SQLDB_H
